@@ -1,0 +1,8 @@
+.slider-this {
+    width: 10px;
+
+}
+.event-log {
+    height: 64em;
+    overflow: scroll;
+}

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for web-front-end-malvarez27/giphy-sample.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">web-front-end-malvarez27/</a> giphy-sample.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">18.18% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>2/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">20% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>2/10</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
+   This is a very simple example of a web front end for a publicly available web service.
+   Due to its pedagogical nature, comments are more elaborate than they typically need to
+   be, or may even be present when no developer explanation would usually be necessary.
+&nbsp;
+   Further, this example uses JavaScript ES6 syntax.
+*/
+"use strict";
+&nbsp;
+// Yes, this is a "global." But it is a single entry point for all of the code in the module,
+// and in its role as the overall controller code of the page, this is one of the acceptable
+// uses for a [single!] top-level name.
+//
+// Module managers address even this issue, for web apps of sufficient complexity.
+(() =&gt; {
+    window.GiphySearchController = {
+        init: () =&gt; {
+<span class="cstat-no" title="statement not covered" >            let searchButton = $("#search-button");</span>
+<span class="cstat-no" title="statement not covered" >            let searchTerm = $("#search-term");</span>
+<span class="cstat-no" title="statement not covered" >            let imageResultContainer = $(".image-result-container");</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            searchButton.click(() =&gt;</span>
+                // The getJSON function initiates a connection to the web service.
+                //
+                // The design of jQuery’s functions allows this entire sequence to be
+                // rendered in a _single statement_, thus obviating the need for curly
+                // braces but resulting in what many will view to be a decrease in readability
+                // (for those who aren’t used to functional-style programming). YMMV
+<span class="cstat-no" title="statement not covered" >                $.getJSON("http://api.giphy.com/v1/gifs/search", {</span>
+                    rating: "pg-13", // Exercise: Hook this up to the front end.
+                    q: searchTerm.val(),
+                    api_key: "dc6zaTOxFJmzC" // Giphy's public beta key (thank you Giphy).
+                }).done(result =&gt; <span class="cstat-no" title="statement not covered" >imageResultContainer.empty().append(</span>
+                    // Receiving the response renders it in an HTML element tree then appends
+                    // it to the element(s) with the class image-result-container.
+                    result.data.map(image =&gt; <span class="cstat-no" title="statement not covered" >$("&lt;div&gt;&lt;/div&gt;").addClass("col-xs-2").append(</span>
+                        $("&lt;img/&gt;").attr({ src: image.images.fixed_width.url, alt: image.source_tld })
+                    ))
+                ))
+            );
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            searchTerm.bind("input", () =&gt; <span class="cstat-no" title="statement not covered" >searchButton.prop("disabled", !searchTerm.val()))</span>;</span>
+        }
+    };
+})();
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Nov 02 2017 17:02:09 GMT-0700 (PDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

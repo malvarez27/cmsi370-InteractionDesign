@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for web-front-end-malvarez27/dogsearch-api.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">web-front-end-malvarez27/</a> dogsearch-api.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">40.54% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>15/37</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">40.54% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>15/37</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*
+   This is a very simple example of a web front end for a publicly available web service.
+   Due to its pedagogical nature, comments are more elaborate than they typically need to
+   be, or may even be present when no developer explanation would usually be necessary.
+&nbsp;
+   Further, this example uses JavaScript ES6 syntax.
+*/
+"use strict";
+&nbsp;
+// Yes, this is a "global." But it is a single entry point for all of the code in the module,
+// and in its role as the overall controller code of the page, this is one of the acceptable
+// uses for a [single!] top-level name.
+//
+// Module managers address even this issue, for web apps of sufficient complexity.
+(() =&gt; {
+    let capitalize = (word) =&gt; {
+<span class="cstat-no" title="statement not covered" >        return word.charAt(0).toUpperCase() + word.slice(1);</span>
+    };
+&nbsp;
+    window.DogSearchController = {
+        init: () =&gt; {
+            let searchButton1 = $("#search-button1");
+            let searchButton2 = $("#search-button2");
+            let searchButton3 = $("#search-button3");
+            let breedSearchTerm = $("#breed-search-term");
+            let sexSearchTerm = $("#sex-search-term");
+            let breeds = $("#listbreeds");
+            let pets = $("#findpet");
+            let shelters = $("#findshelter");
+&nbsp;
+&nbsp;
+            searchButton1.click(() =&gt; {
+                // The getJSON function initiates a connection to the web service.
+                //
+                // The design of jQuery’s functions allows this entire sequence to be
+                // rendered in a _single statement_, thus obviating the need for curly
+                // braces but resulting in what many will view to be a decrease in readability
+                // (for those who aren’t used to functional-style programming). YMMV
+                $.getJSON(
+                    'http://api.petfinder.com/breed.list?animal=dog&amp;format=json&amp;' +
+                      'key=4b5717dd1298af6b1b1b4f481b398b1a&amp;callback=?')
+                    .done(<span class="fstat-no" title="function not covered" >function(petApiData){</span>
+<span class="cstat-no" title="statement not covered" >                        let breedArray = petApiData.petfinder.breeds.breed;</span>
+<span class="cstat-no" title="statement not covered" >                        breeds.empty().append(</span>
+                            breedArray.map(breed =&gt; <span class="cstat-no" title="statement not covered" >$("&lt;div&gt; &lt;/div&gt;").addClass("col-6").append(</span>
+                                $(`&lt;p&gt;${breed.$t}&lt;/p&gt;`)
+                            )));
+                    });
+            });
+            searchButton2.click(() =&gt;
+<span class="cstat-no" title="statement not covered" >                $.getJSON('http://api.petfinder.com/pet.find?animal=dog&amp;format=json&amp;' +</span>
+                'key=4b5717dd1298af6b1b1b4f481b398b1a&amp;breed=' + capitalize(breedSearchTerm.val()) + '&amp;' +
+                  'sex=' + capitalize(sexSearchTerm.val()) + '&amp;location=90250&amp;callback=?')
+                    .done(<span class="fstat-no" title="function not covered" >function(petApiData){</span>
+                        // console.log(petApiData);
+<span class="cstat-no" title="statement not covered" >                        let petFinderArray = petApiData.petfinder.pets.pet;</span>
+<span class="cstat-no" title="statement not covered" >                        pets.empty();</span>
+<span class="cstat-no" title="statement not covered" >                        let currentGroup;</span>
+<span class="cstat-no" title="statement not covered" >                        petFinderArray.forEach((pet, index) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                            if (index % 3 === 0) {</span>
+<span class="cstat-no" title="statement not covered" >                                currentGroup = $("&lt;div&gt;&lt;/div&gt;").addClass("card-group");</span>
+<span class="cstat-no" title="statement not covered" >                                pets.append(currentGroup);</span>
+                            }
+<span class="cstat-no" title="statement not covered" >                            let template = $("#pet-template").clone();</span>
+<span class="cstat-no" title="statement not covered" >                            template.attr({ id: "" });</span>
+<span class="cstat-no" title="statement not covered" >                            template.removeClass("invisible");</span>
+<span class="cstat-no" title="statement not covered" >                            template.find("img").attr({ src: pet.media.photos.photo[3].$t });</span>
+<span class="cstat-no" title="statement not covered" >                            template.find(</span>
+                              ".card-text").text(`${pet.description.$t} ${pet.contact.address1.$t} ${pet.contact.email.$t}`);
+<span class="cstat-no" title="statement not covered" >                            currentGroup.append(template);</span>
+                        });
+                    })
+&nbsp;
+            );
+            searchButton3.click(() =&gt;
+            // shelter.find
+<span class="cstat-no" title="statement not covered" >                $.getJSON('http://api.petfinder.com/shelter.find?format=json&amp;' +</span>
+                'key=4b5717dd1298af6b1b1b4f481b398b1a&amp;location=90245&amp;callback=?')
+                    .done(<span class="fstat-no" title="function not covered" >function(petApiData){</span>
+                      // console.log(petApiData);
+<span class="cstat-no" title="statement not covered" >                        let shelterFinderArray = petApiData.petfinder.shelters.shelter;</span>
+<span class="cstat-no" title="statement not covered" >                        shelters.empty().append(</span>
+                            shelterFinderArray.map(shelter =&gt; <span class="cstat-no" title="statement not covered" >$("&lt;div&gt; &lt;/div&gt;").addClass("col-6").append(</span>
+                                $(`&lt;p&gt;Shelter Name: ${shelter.name.$t} &lt;br&gt;
+                                  Shelter Address: ${shelter.address1.$t} &lt;br&gt;
+                                  City: ${shelter.city.$t}  &lt;br&gt;
+                                  Zip Code: ${shelter.zip.$t} &lt;br&gt;
+                                  Email: ${shelter.email.$t}&lt;/p&gt;`)
+                            )));
+                    })
+&nbsp;
+            );
+        }
+    };
+}
+)();
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Nov 02 2017 17:02:09 GMT-0700 (PDT)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
